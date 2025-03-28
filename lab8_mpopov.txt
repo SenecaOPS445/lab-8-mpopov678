@@ -1,0 +1,43 @@
+
+PLAY [Configure OPS445 Linux VM machine] ***************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache] ***********************************************************
+ok: [vmlab]
+
+TASK [Install EPEL repository] *************************************************
+ok: [vmlab]
+
+TASK [Remove tree] *************************************************************
+ok: [vmlab]
+
+TASK [Set the hostname] ********************************************************
+ok: [vmlab]
+
+TASK [Create new user] *********************************************************
+ok: [vmlab]
+
+TASK [Allow user to sudo without password] *************************************
+ok: [vmlab]
+
+TASK [Check for .ssh directory on managed machine] *****************************
+ok: [vmlab]
+
+TASK [Copy id_rsa.pub from control to managed machine] *************************
+ok: [vmlab]
+
+TASK [Create directory structure] **********************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
